@@ -2,11 +2,11 @@
 #define LINKED_LIST_H
 
 typedef struct List {
-    void* n;
-    list* next;
-};
+    int n;
+    struct List* next;
+}List;
 
-typedef struct List* list;
+typedef  List* list;
 
 
 #endif
