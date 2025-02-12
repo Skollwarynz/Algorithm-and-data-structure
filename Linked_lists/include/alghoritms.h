@@ -36,4 +36,10 @@ list merge(list l, list m);
  */
 list delete_occurencies(list l, int value);
 
+list add_node(int value, list l);
+
+list copy_list(list l);
+
+list symmetrical_difference(list l, list m);
+
 #endif /* ALGORITHM_H */
