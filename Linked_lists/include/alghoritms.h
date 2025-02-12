@@ -23,4 +23,17 @@
  */
 list merge(list l, list m);
 
+/**
+ * @brief Deletes all occurrences of a given value from a linked list.
+ *
+ * This function recursively traverses the linked list and removes all nodes 
+ * that contain the specified value. The function returns the modified list 
+ * without the deleted nodes.
+ *
+ * @param l The linked list from which occurrences should be removed.
+ * @param value The integer value to be deleted from the list.
+ * @return A modified linked list with all occurrences of the specified value removed.
+ */
+list delete_occurencies(list l, int value);
+
 #endif /* ALGORITHM_H */
