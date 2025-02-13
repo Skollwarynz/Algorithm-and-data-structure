@@ -96,4 +96,6 @@ list symmetrical_difference(list l, list m);
  */
 list find_element(int value, list l);
 
+int length_of_list(list l);
+
 #endif /* ALGORITHM_H */
