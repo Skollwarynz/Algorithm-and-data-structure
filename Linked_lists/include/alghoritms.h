@@ -11,6 +11,7 @@
 
 #include "linked_list.h"  /**< Include the linked list header file. */
 
+#include <stdbool.h>
 /**
  * @brief Merges two sorted linked lists into one sorted list.
  *
@@ -148,5 +149,16 @@ void insertion_in_ordered_list(list *l, list node);
  *       point to invalid memory after deallocation.
  */
 void free_linked_list(list *l);
+
+/**
+ * @brief Checks if a linked list is empty.
+ *
+ * This function returns true if the list is empty (i.e., the head pointer is NULL), 
+ * otherwise it returns false.
+ *
+ * @param l The head of the linked list.
+ * @return true if the list is empty, false otherwise.
+ */
+bool is_empty(list l);
 
 #endif /* ALGORITHM_H */
