@@ -4,6 +4,10 @@
    #include "../include/alghoritms.h"
 
    void print_linked_list(list l){
+    if(!l){
+        printf("NULL.\n");
+        return;
+    }
         list tmp = l;
         while(tmp!=NULL){
             printf("%d",tmp->n);

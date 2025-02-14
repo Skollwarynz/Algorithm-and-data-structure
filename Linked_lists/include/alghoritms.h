@@ -136,4 +136,17 @@ void print_linked_list(list l);
  */
 void insertion_in_ordered_list(list *l, list node);
 
+/**
+ * @brief Frees all nodes in a linked list and sets the head pointer to NULL.
+ *
+ * This function iterates through the list, deallocating each node to 
+ * prevent memory leaks. After freeing all nodes, it sets the head pointer to NULL.
+ *
+ * @param l A pointer to the head of the list.
+ *
+ * @note The function modifies the original list pointer, ensuring it does not 
+ *       point to invalid memory after deallocation.
+ */
+void free_linked_list(list *l);
+
 #endif /* ALGORITHM_H */
