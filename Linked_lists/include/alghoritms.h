@@ -96,6 +96,29 @@ list symmetrical_difference(list l, list m);
  */
 list find_element(int value, list l);
 
+/**
+ * @brief Computes the length of a linked list.
+ *
+ * This function iterates through the list and counts the number of nodes.
+ *
+ * @param l The head of the linked list.
+ * @return The number of nodes in the list.
+ *
+ * @note The function does not modify the list.
+ */
 int length_of_list(list l);
+
+/**
+ * @brief Prints the elements of a linked list.
+ *
+ * This function traverses the linked list and prints each element in order, 
+ * separated by commas. The last element is followed by a period and a newline.
+ *
+ * @param l The head of the linked list.
+ *
+ * @note If the list is empty, the function prints "Empty list." 
+ *       The function does not modify the list.
+ */
+void print_linked_list(list l);
 
 #endif /* ALGORITHM_H */
