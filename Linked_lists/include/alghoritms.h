@@ -121,4 +121,19 @@ int length_of_list(list l);
  */
 void print_linked_list(list l);
 
+/**
+ * @brief Inserts a node into a sorted linked list while maintaining order.
+ *
+ * This function inserts the given node into the correct position 
+ * in an ascending order sorted linked list.
+ *
+ * @param l A pointer to the head of the list.
+ * @param node The node to be inserted.
+ *
+ * @note The function assumes that the input list is already sorted. 
+ *       If the list is empty or `node` should be inserted at the beginning, 
+ *       it updates the head pointer.
+ */
+void insertion_in_ordered_list(list *l, list node);
+
 #endif /* ALGORITHM_H */
