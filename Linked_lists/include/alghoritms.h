@@ -188,6 +188,18 @@ list reverse_list(list l);
  *       The returned list is dynamically allocated and should be freed after use.
  */
 list intersection_of_list(list l, list m);
-;
+
+/**
+ * @brief Checks if a linked list contains a cycle.
+ *
+ * This function uses Floyd's cycle detection algorithm (Tortoise and Hare)
+ * to determine whether a given linked list has a cycle.
+ *
+ * @param l The head of the linked list.
+ * @return `true` if the list contains a cycle, `false` otherwise.
+ *
+ * @note The function runs in O(n) time and uses O(1) extra space.
+ */
+bool contains_cycles(list l);
 
 #endif /* ALGORITHM_H */
