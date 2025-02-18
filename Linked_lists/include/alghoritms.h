@@ -161,4 +161,33 @@ void free_linked_list(list *l);
  */
 bool is_empty(list l);
 
+/**
+ * @brief Reverses a linked list in-place.
+ *
+ * This function iterates through the linked list and reverses the order of nodes 
+ * without allocating extra memory.
+ *
+ * @param l The head of the linked list to reverse.
+ * @return The new head of the reversed linked list.
+ *
+ * @note The function modifies the original list.
+ */
+list reverse_list(list l);
+
+/**
+ * @brief Computes the intersection of two sorted linked lists.
+ *
+ * This function returns a new linked list containing only the elements 
+ * that are present in both input lists, preserving the original order.
+ *
+ * @param l The first sorted linked list.
+ * @param m The second sorted linked list.
+ * @return A new linked list containing the common elements of l and m.
+ *
+ * @note The input lists must be sorted in ascending order.
+ *       The returned list is dynamically allocated and should be freed after use.
+ */
+list intersection_of_list(list l, list m);
+;
+
 #endif /* ALGORITHM_H */
