@@ -217,4 +217,21 @@ bool contains_cycles(list l);
  */
 list concatenate_lists(list l, list m);
 
+/**
+ * @brief Inserts list `m` into list `l` at position `n`.
+ *
+ * This function inserts the elements of list `m` into list `l` starting 
+ * from the `n`-th position (0-based index). If `n == 0`, `m` is inserted 
+ * at the beginning of `l`. If `l` is empty, the function returns `m`. 
+ * If `m` is empty, the function returns `l`.
+ *
+ * @param l The first linked list.
+ * @param m The second linked list to insert.
+ * @param n The position in `l` where `m` should be inserted.
+ * @return The head of the modified list.
+ *
+ * @note This function uses recursion, which may cause stack overflow for large `n`.
+ *       Consider an iterative approach if `n` is large.
+ */
+list insertion_of_list(list l, list m, int n);
 #endif /* ALGORITHM_H */
