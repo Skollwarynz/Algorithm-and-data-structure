@@ -202,4 +202,19 @@ list intersection_of_list(list l, list m);
  */
 bool contains_cycles(list l);
 
+/**
+ * @brief Concatenates two linked lists.
+ *
+ * This function appends list `m` to the end of list `l` and returns
+ * the head of the concatenated list.
+ *
+ * @param l The first linked list.
+ * @param m The second linked list to append.
+ * @return The head of the concatenated list.
+ *
+ * @note This function modifies `l` by attaching `m` to its last node.
+ *       If `l` is NULL, it simply returns `m`.
+ */
+list concatenate_lists(list l, list m);
+
 #endif /* ALGORITHM_H */
