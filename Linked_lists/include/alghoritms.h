@@ -234,4 +234,21 @@ list concatenate_lists(list l, list m);
  *       Consider an iterative approach if `n` is large.
  */
 list insertion_of_list(list l, list m, int n);
+
+/**
+ * @brief Splits a linked list into two halves.
+ *
+ * This function takes a linked list and splits it into two parts. 
+ * The first part contains the first half (or the first half + 1 if the list has an odd number of elements),
+ * and the second part contains the remaining elements.
+ * If the list is empty, the function returns NULL.
+ *
+ * @param l The head of the linked list to be split.
+ * @return The head of the second half of the list.
+ *         If the list is empty, returns NULL.
+ * 
+ * @note The original list will have its first half removed and will point to the first element of the second half.
+ */
+list split_list(list l);
+
 #endif /* ALGORITHM_H */
