@@ -251,4 +251,16 @@ list insertion_of_list(list l, list m, int n);
  */
 list split_list(list l);
 
+/**
+ * @brief Removes duplicate elements from a sorted linked list.
+ *
+ * This function iterates through a sorted linked list and removes any duplicate elements.
+ * It ensures that each value appears only once, maintaining the sorted order.
+ *
+ * @param l The head of the sorted linked list.
+ * 
+ * @note The function modifies the list in place and frees the memory of the removed nodes.
+ */
+void remove_duplicates_ordered_list(list l);
+
 #endif /* ALGORITHM_H */
