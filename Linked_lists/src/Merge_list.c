@@ -5,9 +5,8 @@
    list merge(list l, list m){
       if(!l)
          return m;
-      else if(!l)
+      else if(!m)
          return l;
-      
       else if(l->n < m->n){
          l->next = merge(l->next, m);
          return l;

@@ -263,4 +263,16 @@ list split_list(list l);
  */
 void remove_duplicates_ordered_list(list l);
 
+/**
+ * @brief Splits a linked list into two halves.
+ *
+ * This function finds the middle of the list and splits it into two parts: 
+ * the first half (`*left`) and the second half (`*right`).
+ *
+ * @param l The original list to split.
+ * @param left Pointer to store the first half of the list.
+ * @param right Pointer to store the second half of the list.
+ */
+list sort_linked_list(list l);
+
 #endif /* ALGORITHM_H */
