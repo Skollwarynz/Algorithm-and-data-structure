@@ -275,4 +275,17 @@ void remove_duplicates_ordered_list(list l);
  */
 list sort_linked_list(list l);
 
+/**
+ * @brief Creates a new linked list node.
+ *
+ * This function allocates memory for a new node, assigns the given value `n` 
+ * to the node, and initializes the `next` pointer to NULL.
+ *
+ * @param n The integer value to be stored in the new node.
+ * @return A pointer to the newly created node.
+ *
+ * @note The caller is responsible for freeing the allocated memory using `free()`.
+ */
+list create_new_list(int n);
+
 #endif /* ALGORITHM_H */
