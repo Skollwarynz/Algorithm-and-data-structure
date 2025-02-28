@@ -5,4 +5,6 @@ int string_lenght(char* s);
 
 void reverse_string(char* s);
 
+char* copy_string(char* s);
+
 #endif /* ALGORITHM_H */
